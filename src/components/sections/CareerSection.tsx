@@ -121,7 +121,7 @@ const CareerSection = () => {
 
             <div className="p-4 rounded-lg bg-muted/30 border-l-4 border-primary">
               <p className="text-sm">
-                <strong className="text-foreground">My Mission:</strong> I don't want to build addictive apps; I want to use my skills to build tools that help people disconnect and reduce anxiety.
+                <strong className="text-foreground">My Mission:</strong> I don't want to build on something that couldnt help others; I want to use my skills to build tools that help people disconnect and reduce anxiety.
               </p>
             </div>
 
