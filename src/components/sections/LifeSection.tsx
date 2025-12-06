@@ -125,7 +125,7 @@ const LifeSection = () => {
           
           <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
-            Reflecting on my original answer, my view has shifted from viewing innovation as merely gadgets I use to understanding it through the lens of Adoption and Diffusion. While I still value the efficiency of my devices, this course has, however, taught me that a product is only innovative if it's actually adopted by a social system. The hardest part of getting a product to reach the system is crossing the chasm. 
+            Reflecting on my original answer of how innovation affects my life, I’ve moved from focusing on innovation as the tech I use every day to understanding how it actually spreads through adoption and diffusion. While I still value the efficiency of my devices, this course has, however, taught me that a product is only innovative if it's actually adopted by a social system. The hardest part of getting a product to reach the system is crossing the chasm. 
 
             </p>
             
