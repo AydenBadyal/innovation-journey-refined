@@ -7,15 +7,7 @@ interface ThreeSceneProps {
 
 const ThreeScene = ({ className }: ThreeSceneProps) => {
   const containerRef = useRef<HTMLDivElement>(null);
-  const sceneRef = useRef<{
-    scene: THREE.Scene;
-    camera: THREE.PerspectiveCamera;
-    renderer: THREE.WebGLRenderer;
-    particles: THREE.Points;
-    shapes: THREE.Group;
-    nodes: THREE.Group;
-    animationId: number;
-  } | null>(null);
+  const animationIdRef = useRef<number>(0);
 
   useEffect(() => {
     if (!containerRef.current) return;
@@ -46,20 +38,19 @@ const ThreeScene = ({ className }: ThreeSceneProps) => {
       posArray[i + 1] = (Math.random() - 0.5) * 100;
       posArray[i + 2] = (Math.random() - 0.5) * 100;
 
-      // Gradient colors: purple to pink to cyan
       const t = Math.random();
       if (t < 0.33) {
-        colorArray[i] = 0.8; // R
-        colorArray[i + 1] = 0.4; // G
-        colorArray[i + 2] = 1.0; // B (purple)
+        colorArray[i] = 0.8;
+        colorArray[i + 1] = 0.4;
+        colorArray[i + 2] = 1.0;
       } else if (t < 0.66) {
         colorArray[i] = 1.0;
         colorArray[i + 1] = 0.4;
-        colorArray[i + 2] = 0.8; // pink
+        colorArray[i + 2] = 0.8;
       } else {
         colorArray[i] = 0.4;
         colorArray[i + 1] = 0.8;
-        colorArray[i + 2] = 1.0; // cyan
+        colorArray[i + 2] = 1.0;
       }
     }
 
@@ -140,7 +131,6 @@ const ThreeScene = ({ className }: ThreeSceneProps) => {
       nodes.add(node);
     }
 
-    // Create connections between nearby nodes
     const lineMaterial = new THREE.LineBasicMaterial({
       color: 0x8866ff,
       transparent: true,
@@ -180,16 +170,13 @@ const ThreeScene = ({ className }: ThreeSceneProps) => {
 
     // Animation
     const animate = () => {
-      const animationId = requestAnimationFrame(animate);
-      sceneRef.current!.animationId = animationId;
+      animationIdRef.current = requestAnimationFrame(animate);
 
       const time = Date.now() * 0.001;
 
-      // Rotate particles
       particles.rotation.x = time * 0.05 + mouseY * 0.1;
       particles.rotation.y = time * 0.08 + mouseX * 0.1;
 
-      // Animate shapes
       icosahedron.rotation.x = time * 0.3;
       icosahedron.rotation.y = time * 0.2;
       octahedron.rotation.x = time * 0.4;
@@ -199,16 +186,13 @@ const ThreeScene = ({ className }: ThreeSceneProps) => {
       torus.rotation.x = time * 0.2;
       torus.rotation.y = time * 0.4;
 
-      // Float animation for shapes
       shapes.children.forEach((shape, i) => {
         shape.position.y += Math.sin(time * 0.5 + i) * 0.01;
       });
 
-      // Rotate node network
       nodes.rotation.y = time * 0.1 + mouseX * 0.2;
       nodes.rotation.x = mouseY * 0.1;
 
-      // Parallax based on scroll
       camera.position.y = -scrollY * 0.01;
 
       renderer.render(scene, camera);
@@ -224,23 +208,11 @@ const ThreeScene = ({ className }: ThreeSceneProps) => {
     };
     window.addEventListener('resize', handleResize);
 
-    sceneRef.current = {
-      scene,
-      camera,
-      renderer,
-      particles,
-      shapes,
-      nodes,
-      animationId: 0,
-    };
-
     return () => {
       window.removeEventListener('mousemove', handleMouseMove);
       window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('resize', handleResize);
-      if (sceneRef.current) {
-        cancelAnimationFrame(sceneRef.current.animationId);
-      }
+      cancelAnimationFrame(animationIdRef.current);
       renderer.dispose();
       if (containerRef.current) {
         containerRef.current.removeChild(renderer.domElement);
