@@ -141,7 +141,7 @@
   }
 
   .glass-card {
-    @apply backdrop-blur-xl bg-card/50 border border-border/50 rounded-xl;
+    @apply backdrop-blur-sm bg-card/20 border border-border/50 rounded-xl;
   }
 
   .text-glow {

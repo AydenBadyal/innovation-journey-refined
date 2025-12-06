@@ -90,9 +90,10 @@ export default {
           "0%, 100%": { transform: "translateY(0px)" },
           "50%": { transform: "translateY(-20px)" },
         },
+        // ✅ ADJUSTED FOR BETTER VISUAL EFFECT
         "pulse-glow": {
-          "0%, 100%": { opacity: "0.5" },
-          "50%": { opacity: "1" },
+          "0%, 100%": { opacity: "0.2" }, // Starts lower, matching the bg-primary/20 class
+          "50%": { opacity: "0.6" },    // Pulses brighter than the previous '1' for a clearer glow
         },
         "spin-slow": {
           from: { transform: "rotate(0deg)" },

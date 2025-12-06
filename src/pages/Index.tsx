@@ -22,7 +22,7 @@ const Index = () => {
   }, []);
 
   return (
-    <main className="relative min-h-screen bg-background overflow-x-hidden">
+    <main className="relative min-h-screen overflow-x-hidden">
       {/* Three.js Background */}
       <ThreeScene />
 
