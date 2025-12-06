@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { BookOpen, ExternalLink } from 'lucide-react';
+import { access } from 'fs';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -22,7 +23,7 @@ const references = [
     authors: 'Nathan Onn',
     title: 'Why Domain Knowledge Is Crucial to Succeed in Software Engineering',
     url: 'https://www.nathanonn.com/why-domain-knowledge-is-crucial-to-succeed-in-software-engineering/',
-    date: 'March 2, 2023',
+    accessed: 'December 3, 2025',
   },
 ];
 
@@ -92,14 +93,6 @@ const ReferencesSection = () => {
         </div>
 
         {/* Footer */}
-        <div className="refs-animate mt-16 text-center">
-          <p className="text-muted-foreground text-sm">
-            Individual Assignment #1.2 — Innovation Reflection
-          </p>
-          <p className="text-muted-foreground/60 text-xs mt-2">
-            Built with Three.js + GSAP ScrollTrigger
-          </p>
-        </div>
       </div>
     </section>
   );

@@ -94,12 +94,11 @@ const StudiesSection = () => {
           <div className="flex items-center gap-3 mb-4">
             <ArrowRight className="w-6 h-6 text-secondary" />
             <h3 className="text-xl font-display font-semibold">Revised Perspective</h3>
-            <span className="text-xs px-2 py-1 rounded-full bg-secondary/20 text-secondary">After the Course</span>
           </div>
           
           <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
-              My perspective on my degree has deepened significantly. I originally noted the link between CS and Business, but I now understand this through the lens of <strong className="text-foreground">Root Cause Analysis</strong>. I no longer see my degree as just learning to build solutions, but rather learning to <strong className="text-foreground">identify the right problems</strong>.
+              My perspective on my degree has deepened significantly. I originally noted the link between CS and Business, but I now understand this through the lens of Root Cause Analysis. I no longer see my degree as just learning to build solutions, but rather learning to identify the right problems.
             </p>
             
             <div className="p-4 rounded-lg bg-muted/30 border-l-4 border-accent">
@@ -109,17 +108,8 @@ const StudiesSection = () => {
             </div>
 
             <p>
-              Our class about learning the <strong className="text-foreground">Weed vs Root analogy</strong> changed my view because it showed me that writing code often addresses the Weed (the visible symptom), but business strategy must address the Root (the underlying cause).
-            </p>
+            Our class about learning about the Weed vs Root analogy changed my view because it showed me that writing code often addresses the Weed, the visible symptom, but business strategy must address the Root, the underlying cause. If I build a technical solution for a symptom without understanding the root cause, the innovation will likely fail. This is reinforced by a 2023 industry article by software engineer Nathan Onn, who argues that domain knowledge is more valuable than technical ability because coding skills alone often lead to incorrect estimates and solutions that don't actually meet customer needs. This validates my new belief that my Business minor is not just a bonus, but the essential domain knowledge that prevents me from writing useless code.
 
-            <div className="p-4 rounded-lg bg-muted/30 border-l-4 border-secondary">
-              <p className="text-sm">
-                <strong className="text-foreground">External Validation:</strong> This is reinforced by a 2023 industry article by software engineer Nathan Onn, who argues that <strong className="text-foreground">domain knowledge is more valuable than technical ability</strong> because coding skills alone often lead to incorrect estimates and solutions that don't actually meet customer needs.
-              </p>
-            </div>
-
-            <p>
-              This validates my new belief that my Business minor is not just a bonus, but the <strong className="text-foreground">essential domain knowledge</strong> that prevents me from writing useless code.
             </p>
           </div>
         </div>

@@ -67,7 +67,7 @@ const LifeSection = () => {
           <div className="bg-card rounded-lg p-6 md:p-8">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-3 h-3 rounded-full bg-primary animate-pulse" />
-              <h3 className="text-xl font-display font-semibold">My Hackathon Project: SFU CourseMap</h3>
+              <h3 className="text-xl font-display font-semibold">My Hackathon Project: SFU CourseMap Created After Assignemtn 1.1</h3>
             </div>
             
             <div className="grid md:grid-cols-2 gap-8">
@@ -121,27 +121,19 @@ const LifeSection = () => {
           <div className="flex items-center gap-3 mb-4">
             <ArrowRight className="w-6 h-6 text-secondary" />
             <h3 className="text-xl font-display font-semibold">Revised Perspective</h3>
-            <span className="text-xs px-2 py-1 rounded-full bg-secondary/20 text-secondary">After the Course</span>
           </div>
           
           <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
-              Reflecting on my original answer, my view has shifted from viewing innovation as merely gadgets I use to understanding it through the lens of <strong className="text-foreground">Adoption and Diffusion</strong>. While I still value the efficiency of my devices, this course has taught me that a product is only innovative if it's actually adopted by a social system. The hardest part of getting a product to reach the system is <strong className="text-foreground">crossing the chasm</strong>.
+            Reflecting on my original answer, my view has shifted from viewing innovation as merely gadgets I use to understanding it through the lens of Adoption and Diffusion. While I still value the efficiency of my devices, this course has, however, taught me that a product is only innovative if it's actually adopted by a social system. The hardest part of getting a product to reach the system is crossing the chasm. 
+
             </p>
             
             <p>
-              My view has shifted because of our class discussion on the <strong className="text-foreground">innovation decision process</strong>. I now realize that for my Hackathon project to be successful, we cannot just be good at coding, but we must create something that has a <strong className="text-foreground">relative advantage</strong> and <strong className="text-foreground">compatibility</strong> to be adopted by users.
+            My view has shifted because of our class discussion, and one of the topics that reinforced this was the innovation decision process. I now realize that for my Hackathon project, which I did in October, to be successful, we cannot just be good at coding, but we must create something that has a relative advantage and compatibility to be adopted by users. Our project for the Hackathon was designed to solve the problem of students not being able to see all the prerequisites they needed for a course. We came out with this through our own experience of looking at what courses we needed to take for a certain course. While our website possessed Relative Advantage because it offered a full tree breakdown, unlike the current system, and Compatibility with student needs, we failed to market it effectively. Looking back, we did not account for Observability, we didn't make the benefits visible enough to the broader student body to successfully cross the chasm. This mirrors the real-world strategy of companies like OpenAI, which was stated by Technology Magazine, that ChatGPT’s massive success wasn't just due to the model itself, but because they strategically eliminated friction in the user interface to ensure widespread adoption. Unlike OpenAI, my team focused on the backend logic but neglected the user adoption strategy, which ultimately limited our innovation's impact.
+
             </p>
 
-            <div className="p-4 rounded-lg bg-muted/30 border-l-4 border-primary">
-              <p className="text-sm">
-                <strong className="text-foreground">Key Learning:</strong> While our website possessed Relative Advantage and Compatibility with student needs, we failed to market it effectively. Looking back, we did not account for <strong className="text-foreground">Observability</strong>—we didn't make the benefits visible enough to the broader student body to successfully cross the chasm.
-              </p>
-            </div>
-
-            <p>
-              This mirrors the real-world strategy of companies like OpenAI, which according to Technology Magazine, achieved ChatGPT's massive success not just due to the model itself, but because they strategically eliminated friction in the user interface to ensure widespread adoption. Unlike OpenAI, my team focused on the backend logic but neglected the user adoption strategy.
-            </p>
           </div>
         </div>
       </div>

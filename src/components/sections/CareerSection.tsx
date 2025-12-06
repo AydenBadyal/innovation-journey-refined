@@ -108,16 +108,15 @@ const CareerSection = () => {
           <div className="flex items-center gap-3 mb-4">
             <ArrowRight className="w-6 h-6 text-secondary" />
             <h3 className="text-xl font-display font-semibold">Revised Perspective</h3>
-            <span className="text-xs px-2 py-1 rounded-full bg-secondary/20 text-secondary">After the Course</span>
           </div>
           
           <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
-              When looking back to my prior answer about how innovation can be a part of my potential future career, my view has evolved from building efficient software to finding my <strong className="text-foreground">Ikigai</strong>. While I previously focused heavily on the intersection of what I am good at (problem-solving and learning new tools) and what I can be paid for, the course has taught me that true innovation requires integrating <strong className="text-foreground">what the world needs</strong>.
+              When looking back to my prior answer about how innovation can be a part of my potential future career, my view has evolved from building efficient software to finding my Ikigai. While I previously focused heavily on the intersection of what I am good at problem-solving and learning new tools and what I can be paid for, the course has taught me that true innovation requires integrating what the world needs.
             </p>
             
             <p>
-              I no longer see my future career as just writing code; I see it as <strong className="text-foreground">designing technology that solves the problem of digital noise and fosters real-life connections</strong>. Ikigai helped give me inspiration to not focus on just trying to be good at coding to get a high salary in the tech industry, because I would have a profession but not a purpose.
+              I no longer see my future career as just writing code; I see it as designing technology that solves the problem of digital noise and fosters real-life connections. Ikigai helped give me inspiration to not focus on just trying to be good at coding to get a high salary in the tech industry, because I would have a profession but not a purpose.
             </p>
 
             <div className="p-4 rounded-lg bg-muted/30 border-l-4 border-primary">
@@ -127,12 +126,10 @@ const CareerSection = () => {
             </div>
 
             <p>
-              This aligns with the <strong className="text-foreground">Center for Humane Technology</strong>, an organization founded by former Google Ethicist Tristan Harris. Harris argues that the tech industry has been downgrading humans by competing for attention, and the future of innovation lies in technology that respects human well-being rather than exploiting it.
+              This aligns with the Center for Humane Technology, an organization founded by former Google Ethicist Tristan Harris. Harris argues that the tech industry has been downgrading humans by competing for attention, and the future of innovation lies in technology that respects human well-being rather than exploiting it. This validates my new perspective about my ability to break things down and improve them should be applied to fixing the problem of digital isolation, moving my career from a job to a mission.
+
             </p>
 
-            <p>
-              This validates my new perspective: my ability to break things down and improve them should be applied to <strong className="text-foreground">fixing the problem of digital isolation</strong>, moving my career from a job to a mission.
-            </p>
           </div>
         </div>
       </div>

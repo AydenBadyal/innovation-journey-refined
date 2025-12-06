@@ -60,6 +60,12 @@ const HeroSection = () => {
         >
           A reflection on how innovation shapes my life, studies, and future career
         </p>
+        <p
+          ref={subtitleRef}
+          className="text-xl md:text-2xl text-muted-foreground font-body max-w-2xl mx-auto"
+        >
+          Ayden Badyal
+        </p>
       </div>
 
       <div
