@@ -82,7 +82,6 @@ const ReferencesSection = () => {
                   <p className="text-foreground font-body">
                     <span className="text-muted-foreground">{ref.authors}. </span>
                     <span className="italic">"{ref.title}."</span>
-                    {ref.date && <span className="text-muted-foreground"> {ref.date}.</span>}
                     {ref.accessed && <span className="text-muted-foreground"> Accessed {ref.accessed}.</span>}
                   </p>
                 </div>
